@@ -1,13 +1,10 @@
 package com.xsx.jsoup.service;
 
-import com.alibaba.fastjson.JSONObject;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.Headers;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import org.jetbrains.annotations.NotNull;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -15,20 +12,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.stereotype.Service;
 
-
-import javax.xml.xpath.XPath;
 import java.time.Duration;
-
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 
 @Service
@@ -48,11 +37,10 @@ public class WebDriverService {
 
     }
 
-    @NotNull
+
     public ChromeDriver getChromeDriver(String url) {
         //这一步必不可少
         System.setProperty("webdriver.chrome.driver", "D:/xsx-tools/chormeDriver/chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
         ChromeDriver driver = new ChromeDriver();
         driver.get(url);
         return driver;
