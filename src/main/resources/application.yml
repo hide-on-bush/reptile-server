@@ -3,6 +3,46 @@ server:
 spring:
    application:
       name: jsoup
+   redis:
+        # Redis本地服务器地址，注意要开启redis服务，即那个redis-server.exe
+        host: 192.168.177.136
+        # Redis服务器端口,默认为6379.若有改动按改动后的来
+        port: 6379
+        database: 0
+        #Redis服务器连接密码，默认为空，若有设置按设置的来
+        password: root
+        jedis:
+          pool:
+            # 连接池最大连接数，若为负数则表示没有任何限制
+            max-active: 8
+            # 连接池最大阻塞等待时间，若为负数则表示没有任何限制
+            max-wait: -1
+            # 连接池中的最大空闲连接
+            max-idle: 8
+
+
+   rabbitmq:
+     host: 192.168.177.136
+     port: 5672
+     username: guest
+     password: guest
+     connection-timeout: 60s
+     publisher-returns: true
+     virtual-host: my_vhost
+#     template:
+#       mandatory: true
+
+     #消费者配置
+     listener:
+       simple:
+         concurrency: 5
+         max-concurrency: 15
+         acknowledge-mode: manual
+         prefetch: 1
+
+
+
+
 
 logging:
   config: classpath:logback-spring.xml

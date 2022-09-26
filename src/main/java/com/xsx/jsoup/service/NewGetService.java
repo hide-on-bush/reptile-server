@@ -5,6 +5,7 @@ import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
 
 import com.xsx.jsoup.common.util.HttpUtil;
+import com.xsx.jsoup.common.util.SslUtil;
 import com.xsx.jsoup.entity.BalanceInfo;
 import com.xsx.jsoup.entity.BankUser;
 import lombok.extern.slf4j.Slf4j;
@@ -31,6 +32,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -42,6 +44,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.util.*;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
@@ -240,13 +243,16 @@ public class NewGetService {
 
     public BankUser initParam(){
         BankUser bankUser = new BankUser();
+        bankUser.setUserId("10077465974");
         bankUser.setLoginName("8197132475");
         bankUser.setPassword("Raju@0901");
+        bankUser.setBankName("IDFC FIRST Bank");
         return bankUser;
     }
 
 
     public BalanceInfo getBalance()  throws Exception{
+        SslUtil.ignoreSsl();
         BalanceInfo balanceInfo = null;
         Map<String, Map<String, String>> cookeisAndHeaders = this.login();
         if (!CollectionUtils.isEmpty(cookeisAndHeaders) && cookeisAndHeaders.containsKey("requestHeaders")) {
@@ -257,10 +263,14 @@ public class NewGetService {
         return balanceInfo;
     }
 
+    @Autowired
+    @Qualifier("myRedisTemplate")
+    private RedisTemplate redisTemplate;
+
     public BalanceInfo fetchBalance(BankUser bankUser, Map<String, String> headers) throws IOException {
-        this.sentByRest(headers);
+        //this.sentByRest(headers);
         try {
-            this.doGetByHttpClient(headers);
+           // this.doGetByHttpClient(headers);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -277,7 +287,7 @@ public class NewGetService {
         com.alibaba.fastjson.JSONArray jsonArray=jsonObject.getJSONArray("accountsList");
         for (int i=0;i<jsonArray.size();i++){
             com.alibaba.fastjson.JSONObject accountJson=jsonArray.getJSONObject(i);
-            String accountNumber=accountJson.getString("accountNumber");
+            String accountNumber = accountJson.getString("accountNumber");
             if(bankUser.getUserId().equals(accountNumber)){
                 String currentBalance=accountJson.getString("currentBalance");
                 balanceInfo.setLoginName(bankUser.getLoginName());
@@ -286,6 +296,9 @@ public class NewGetService {
                 balanceInfo.setBalance(new BigDecimal(currentBalance));
             }
         }
+        Executors.newFixedThreadPool(1).execute(()-> {
+            redisTemplate.opsForValue().setIfAbsent("idfc:"+bankUser.getBankName(),com.alibaba.fastjson.JSON.toJSONString(headers),30L, TimeUnit.MINUTES);
+        });
         return balanceInfo;
     }
 
@@ -376,6 +389,7 @@ public class NewGetService {
         header.forEach((k,v)->{
             headers.add(k, v);
         });
+
         String url = "https://app.my.idfcfirstbank.com/api/payments/v1/accounts";
         //String url = "https://app.my.idfcfirstbank.com/api/account/v1?status=ACTIVE,INACTIVE,DORMANT,PRECREATED";
         ResponseEntity<String> resEntity = restTemplate.exchange(url, method, requestEntity, String.class);

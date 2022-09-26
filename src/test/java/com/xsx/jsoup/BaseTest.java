@@ -2,6 +2,7 @@ package com.xsx.jsoup;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.xsx.jsoup.entity.BankUser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -52,5 +53,12 @@ public abstract class BaseTest {
     }
 
 
+    protected BankUser initBankUser(){
+        BankUser bankUser = new BankUser();
+        bankUser.setLoginName("9059860438");
+        bankUser.setPassword("Wp123456@!");
+        bankUser.setBankName("paytm");
+        return bankUser;
+    }
 }
 

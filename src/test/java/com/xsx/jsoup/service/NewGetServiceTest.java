@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.HashMap;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -28,5 +30,19 @@ class NewGetServiceTest {
     @Test
     void getBalance() throws Exception{
         newGetService.getBalance();
+    }
+
+    @Test
+    void testRest(){
+        newGetService.sentByRest(new HashMap<>());
+    }
+
+    @Test
+    void test(){
+        String cookie = "BIGipServerwww.ktbnetbank.com_ext=!AVfKz09/cgKcmX7jxlhocsrvj8acgW6hUdB582kVpeYYyStw04B75gxIOksiLScfkJdugq2CKqFrvRg=; expires=Fri, 12-Aug-2022 09:17:23 GMT; path=/; Httponly; Secure; Secure; HttpOnly";
+        if (cookie.contains("12-Aug-2022")) {
+            cookie = cookie.replace("12-Aug-2022", "13-Aug-2022");
+        }
+        System.out.println(cookie);
     }
 }

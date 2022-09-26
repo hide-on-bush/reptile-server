@@ -21,7 +21,7 @@ class LogServiceTest {
     private LogService logService;
 
     @Test
-    void getLogs() {
+    void getLogs()throws Exception {
         logService.getLogs();
     }
 }
