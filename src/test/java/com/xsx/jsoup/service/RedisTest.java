@@ -25,9 +25,8 @@ public class RedisTest {
     private RedisTemplate redisTemplate;
 
 
-
     @Test
-    void test() throws Exception{
+    void test() throws Exception {
         Thread.sleep(300000);
         redisTemplate.opsForValue().set("helloadsasda", "world  ADSsD");
 
@@ -38,17 +37,17 @@ public class RedisTest {
         String bankUser = "java";
         String headers = "hide_on_bush";
         redisTemplate.opsForValue().set("hello", "wrold");
-        Executors.newFixedThreadPool(1).submit(()-> {
+        Executors.newFixedThreadPool(1).submit(() -> {
             System.out.println("hello");
-            redisTemplate.opsForValue().set(bankUser,headers,30L, TimeUnit.MINUTES);
+            redisTemplate.opsForValue().set(bankUser, headers, 30L, TimeUnit.MINUTES);
             System.out.println("***************************************************");
         });
     }
 
     @Test
-    void test2(){
+    void test2() {
         redisTemplate.opsForValue().set("aaa", "123");
-        new Thread(new Runnable(){
+        new Thread(new Runnable() {
             public void run() {
                 System.out.println("========================hello==================");
                 redisTemplate.opsForValue().set("ADMIN", "ROOT");

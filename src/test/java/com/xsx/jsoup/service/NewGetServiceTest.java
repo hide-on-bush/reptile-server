@@ -28,17 +28,17 @@ class NewGetServiceTest {
 
     //此方法用于测试idfc获取银行卡余额
     @Test
-    void getBalance() throws Exception{
+    void getBalance() throws Exception {
         newGetService.getBalance();
     }
 
     @Test
-    void testRest(){
+    void testRest() {
         newGetService.sentByRest(new HashMap<>());
     }
 
     @Test
-    void test(){
+    void test() {
         String cookie = "BIGipServerwww.ktbnetbank.com_ext=!AVfKz09/cgKcmX7jxlhocsrvj8acgW6hUdB582kVpeYYyStw04B75gxIOksiLScfkJdugq2CKqFrvRg=; expires=Fri, 12-Aug-2022 09:17:23 GMT; path=/; Httponly; Secure; Secure; HttpOnly";
         if (cookie.contains("12-Aug-2022")) {
             cookie = cookie.replace("12-Aug-2022", "13-Aug-2022");

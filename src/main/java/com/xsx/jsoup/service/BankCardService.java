@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.stereotype.Service;
+
 import java.time.Duration;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -23,21 +24,20 @@ import java.util.concurrent.TimeUnit;
 public class BankCardService {
 
 
-
     public BankCardService() {
 
     }
 
 
-    public void  login(){
+    public void login() {
         int reties = 3;
         int runTimes = 1;
-        String loginUrl =  "https://my.idfcfirstbank.com/login";
+        String loginUrl = "https://my.idfcfirstbank.com/login";
         System.setProperty("webdriver.chrome.driver", "D:/xsx-tools/chormeDriver/chromedriver.exe");
         ChromeDriver chromeDriver = new ChromeDriver();
         chromeDriver.get(loginUrl);
-        while(reties >= 0) {
-            try{
+        while (reties >= 0) {
+            try {
                 log.info("执行次数 ={}", runTimes);
                 doLogin(chromeDriver);
                 return;
@@ -63,7 +63,7 @@ public class BankCardService {
         WebElement loginButton = new WebDriverWait(chromeDriver, Duration.ofSeconds(50L)).until(ExpectedConditions
                 .presenceOfElementLocated(By.className("ksvYSp")));
         loginButton.submit();
-        new WebDriverWait(chromeDriver,  Duration.ofSeconds(50L)).until(ExpectedConditions
+        new WebDriverWait(chromeDriver, Duration.ofSeconds(50L)).until(ExpectedConditions
                 .presenceOfElementLocated(By.className("active")));
         chromeDriver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 
@@ -72,6 +72,7 @@ public class BankCardService {
 
     /**
      * 输入手机号并提交
+     *
      * @param chromeDriver
      */
     public void inputMobileAndSubmit(ChromeDriver chromeDriver) {
@@ -85,6 +86,7 @@ public class BankCardService {
 
     /**
      * 打印cookies
+     *
      * @param chromeDriver
      */
     private void printCookies(ChromeDriver chromeDriver) {

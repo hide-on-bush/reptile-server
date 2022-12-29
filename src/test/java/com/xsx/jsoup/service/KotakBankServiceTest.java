@@ -19,13 +19,13 @@ class KotakBankServiceTest {
     private KotakBankService kotakBankService;
 
     @Test
-    void login() throws Exception{
+    void login() throws Exception {
         kotakBankService.login();
     }
 
 
     @Test
-    void test1() throws Exception{
+    void test1() throws Exception {
         kotakBankService.get1();
     }
 

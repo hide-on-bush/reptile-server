@@ -14,7 +14,7 @@ public class WebDriverController {
     private WebDriverService webDriverService;
 
     @GetMapping("/use")
-    public void useWebDriver() throws Exception{
+    public void useWebDriver() throws Exception {
         webDriverService.useWebDriver();
     }
 }

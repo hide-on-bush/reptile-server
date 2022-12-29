@@ -57,7 +57,7 @@ public class Recieve {
 //    }
 
 
-    public void receive(){
+    public void receive() {
         Message receive = rabbitTemplate.receive("order-queue", 3 * 60 * 1000);
         log.info("consumer 开始消费：");
         System.out.println();

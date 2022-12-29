@@ -23,7 +23,7 @@ import java.util.logging.Level;
 @Service
 public class LogService {
 
-    public ChromeDriver getDriver(){
+    public ChromeDriver getDriver() {
         System.setProperty("webdriver.chrome.driver", "D:/xsx-tools/chromedriver.exe");
         ChromeOptions cap = new ChromeOptions();
         //cap.setExperimentalOption("w3c", false);
@@ -35,7 +35,7 @@ public class LogService {
         return new ChromeDriver(cap);
     }
 
-    public void getLogs() throws Exception{
+    public void getLogs() throws Exception {
         ChromeDriver driver = this.getDriver();
         driver.get("http://www.baidu.com");
         List<LogEntry> all = driver.manage().logs().get(LogType.PERFORMANCE).getAll();

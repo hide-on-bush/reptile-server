@@ -40,7 +40,7 @@ class RedisServiceTest {
     }
 
     @Test
-    public void write(){
+    public void write() {
         redisService.write();
     }
 }

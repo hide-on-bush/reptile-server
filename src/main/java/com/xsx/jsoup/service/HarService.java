@@ -43,13 +43,12 @@ import java.util.stream.Collectors;
 public class HarService {
 
 
-
-    public Map<String, String> har() throws Exception{
+    public Map<String, String> har() throws Exception {
         Map<String, String> map = new HashMap<>();
         BrowserMobProxy proxy = getProxyServer(); //getting browsermob proxy
-        System.out.println(proxy+"BrowserMobProxy");
+        System.out.println(proxy + "BrowserMobProxy");
         Proxy seleniumProxy = getSeleniumProxy(proxy);
-        System.out.println(seleniumProxy+"seleniumProxy");
+        System.out.println(seleniumProxy + "seleniumProxy");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setBrowserName("chrome");
@@ -72,7 +71,7 @@ public class HarService {
         Har har1 = proxy.getHar();
         HarLog log1 = har1.getLog();
         List<HarEntry> entries1 = log1.getEntries();
-        entries1 = entries1.stream().filter(x->x.getRequest().getUrl().equals("https://netbanking.kotak.com/knb2/login-service/v1/login")).collect(Collectors.toList());
+        entries1 = entries1.stream().filter(x -> x.getRequest().getUrl().equals("https://netbanking.kotak.com/knb2/login-service/v1/login")).collect(Collectors.toList());
         System.out.println("har1 =========" + JSON.toJSONString(entries1));
 
         Thread.sleep(5L);
@@ -87,7 +86,7 @@ public class HarService {
         Har har = proxy.getHar();
         HarLog log = har.getLog();
         List<HarEntry> entries = log.getEntries();
-        entries = entries.stream().filter(x->x.getRequest().getUrl().equals("https://netbanking.kotak.com/knb2/login-service/v1/authenticate")).collect(Collectors.toList());
+        entries = entries.stream().filter(x -> x.getRequest().getUrl().equals("https://netbanking.kotak.com/knb2/login-service/v1/authenticate")).collect(Collectors.toList());
         System.out.println("har2 =========" + JSON.toJSONString(entries));
         if (!CollectionUtils.isEmpty(entries)) {
             HarEntry harEntry = entries.get(0);
@@ -103,28 +102,23 @@ public class HarService {
     }
 
 
-    public Proxy getSeleniumProxy(BrowserMobProxy proxyServer)
-    {
+    public Proxy getSeleniumProxy(BrowserMobProxy proxyServer) {
         Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxyServer);
         System.out.println(seleniumProxy.getHttpProxy());
-        try
-        {
+        try {
             String hostIp = Inet4Address.getLocalHost().getHostAddress();
             System.out.println(hostIp);
             seleniumProxy.setHttpProxy(hostIp + ":" + proxyServer.getPort());
             seleniumProxy.setSslProxy(hostIp + ":" + proxyServer.getPort());
-            System.out.println(proxyServer.getPort()+"is port number");
-        }
-        catch (UnknownHostException e)
-        {
+            System.out.println(proxyServer.getPort() + "is port number");
+        } catch (UnknownHostException e) {
             e.printStackTrace();
             System.out.println("invalid host");
         }
         return seleniumProxy;
     }
 
-    public BrowserMobProxy getProxyServer()
-    {
+    public BrowserMobProxy getProxyServer() {
         BrowserMobProxy proxy = new BrowserMobProxyServer();
         proxy.setTrustAllServers(true);
         proxy.start(0);
@@ -132,7 +126,7 @@ public class HarService {
     }
 
 
-    public void har2() throws Exception{
+    public void har2() throws Exception {
         System.setProperty("webdriver.chrome.driver", "D:/xsx-tools/chormeDriver/105.0.5195.52/chromedriver.exe");
         BrowserMobProxy proxy = new BrowserMobProxyServer();
         proxy.start(0);
@@ -159,7 +153,7 @@ public class HarService {
         Har har1 = proxy.getHar();
         HarLog log1 = har1.getLog();
         List<HarEntry> entries1 = log1.getEntries();
-        entries1 = entries1.stream().filter(x->x.getRequest().getUrl().equals("https://netbanking.kotak.com/knb2/login-service/v1/login")).collect(Collectors.toList());
+        entries1 = entries1.stream().filter(x -> x.getRequest().getUrl().equals("https://netbanking.kotak.com/knb2/login-service/v1/login")).collect(Collectors.toList());
         System.out.println("har2 =========" + JSON.toJSONString(entries1));
         WebElement pwdInput = new WebDriverWait(driver, Duration.ofSeconds(50L)).until(ExpectedConditions
                 .presenceOfElementLocated(By.id("credentialInputField")));
@@ -172,7 +166,7 @@ public class HarService {
         Har har = proxy.getHar();
         HarLog log = har.getLog();
         List<HarEntry> entries = log.getEntries();
-        entries = entries.stream().filter(x->x.getRequest().getUrl().equals("https://netbanking.kotak.com/knb2/login-service/v1/authenticate")).collect(Collectors.toList());
+        entries = entries.stream().filter(x -> x.getRequest().getUrl().equals("https://netbanking.kotak.com/knb2/login-service/v1/authenticate")).collect(Collectors.toList());
         System.out.println("har2 =========" + JSON.toJSONString(entries));
     }
 }

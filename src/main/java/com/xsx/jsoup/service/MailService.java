@@ -25,13 +25,13 @@ import static com.fasterxml.jackson.databind.type.LogicalType.DateTime;
 public class MailService {
 
 
-    public static void main(String[] args) throws Exception{
-       // emailDemo();
+    public static void main(String[] args) throws Exception {
+        // emailDemo();
         recipientMail();
     }
 
 
-    public static String receive() throws Exception{
+    public static String receive() throws Exception {
         // 准备连接服务器的会话信息
         Properties prop = new Properties();
         prop.setProperty("mail.debug", "true");
@@ -57,12 +57,11 @@ public class MailService {
         // 5、关闭
         folder.close(false);
         store.close();
-        return  null;
+        return null;
     }
 
 
     public static void receive1() throws Exception {
-
 
 
         Properties props = new Properties();
@@ -89,17 +88,15 @@ public class MailService {
         Message message[] = folder.getMessages();
 
 
+        folder.close(true);
 
-      folder.close(true);
-
-     store.close();
+        store.close();
 
     }
 
 
-
     //public static void emailDemmo(String protocol, String port, String host, String user, String psw) {
-    public static void emailDemo(){
+    public static void emailDemo() {
         Properties props = new Properties();
         //pop3
         props.setProperty("mail.store.protocol", "imap");
@@ -126,7 +123,7 @@ public class MailService {
             for (Message message : messages) {
                 //逐个处理邮件
             }
-        } catch (MessagingException  e) {
+        } catch (MessagingException e) {
             log.error("初始化邮箱失败！！！", e);
         } finally {
             try {
@@ -147,11 +144,9 @@ public class MailService {
     }
 
 
-
-    public static void test1() throws Exception{
+    public static void test1() throws Exception {
 
     }
-
 
 
     public static Properties getProperties() {
@@ -193,7 +188,7 @@ public class MailService {
 
             // 获取收件箱中的所有邮件并解析
             Message[] messages = emailFolder.getMessages();
-            for (Message message:messages) {
+            for (Message message : messages) {
                 System.out.println("------------------解析第" + message.getMessageNumber() + "封邮件-------------------- ");
                 System.out.println("Email Number " + message.getMessageNumber());
                 System.out.println("主题: " + MimeUtility.decodeText(message.getSubject()));
@@ -203,7 +198,7 @@ public class MailService {
                 //System.out.println("发送时间："+new DateTime(message.getSentDate()).toString("yyyy-MM-dd HH:mm:ss"));
                 System.out.println("是否已读：" + message.getFlags().contains(Flags.Flag.SEEN));
                 String[] headers = message.getHeader("X-Priority");
-                if(ArrayUtils.isNotEmpty(headers)){
+                if (ArrayUtils.isNotEmpty(headers)) {
                     System.out.println("邮件优先级：" + headers[0]);
                 }
                 String[] replySign = message.getHeader("Disposition-Notification-To");
@@ -219,7 +214,6 @@ public class MailService {
 
         return false;
     }
-
 
 
 }

@@ -53,7 +53,7 @@ public abstract class BaseTest {
     }
 
 
-    protected BankUser initBankUser(){
+    protected BankUser initBankUser() {
         BankUser bankUser = new BankUser();
         bankUser.setLoginName("9059860438");
         bankUser.setPassword("Wp123456@!");

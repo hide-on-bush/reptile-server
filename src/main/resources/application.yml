@@ -1,44 +1,51 @@
 server:
-   port: 8888
+  port: 8888
 spring:
-   application:
-      name: jsoup
-   redis:
-        # Redis本地服务器地址，注意要开启redis服务，即那个redis-server.exe
-        host: 192.168.177.136
-        # Redis服务器端口,默认为6379.若有改动按改动后的来
-        port: 6379
-        database: 0
-        #Redis服务器连接密码，默认为空，若有设置按设置的来
-        password: root
-        jedis:
-          pool:
-            # 连接池最大连接数，若为负数则表示没有任何限制
-            max-active: 8
-            # 连接池最大阻塞等待时间，若为负数则表示没有任何限制
-            max-wait: -1
-            # 连接池中的最大空闲连接
-            max-idle: 8
+  application:
+    name: jsoup
+  redis:
+    # Redis本地服务器地址，注意要开启redis服务，即那个redis-server.exe
+    host: 192.168.177.145
+    # Redis服务器端口,默认为6379.若有改动按改动后的来
+    port: 6379
+    database: 0
+    #Redis服务器连接密码，默认为空，若有设置按设置的来
+    password: root
+    jedis:
+      pool:
+        # 连接池最大连接数，若为负数则表示没有任何限制
+        max-active: 8
+        # 连接池最大阻塞等待时间，若为负数则表示没有任何限制
+        max-wait: -1
+        # 连接池中的最大空闲连接
+        max-idle: 8
+
+  datasource:
+    url: jdbc:mysql://192.168.177.145:3306/hyper?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
 
 
-   rabbitmq:
-     host: 192.168.177.136
-     port: 5672
-     username: guest
-     password: guest
-     connection-timeout: 60s
-     publisher-returns: true
-     virtual-host: my_vhost
-#     template:
-#       mandatory: true
+  rabbitmq:
+    host: 192.168.177.139
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 60s
+    publisher-returns: true
+    virtual-host: my_vhost
+    #     template:
+    #       mandatory: true
 
-     #消费者配置
-     listener:
-       simple:
-         concurrency: 5
-         max-concurrency: 15
-         acknowledge-mode: manual
-         prefetch: 1
+    #消费者配置
+    listener:
+      simple:
+        concurrency: 5
+        max-concurrency: 15
+        acknowledge-mode: manual
+        prefetch: 1
 
 
 
@@ -46,3 +53,32 @@ spring:
 
 logging:
   config: classpath:logback-spring.xml
+
+
+telegram:
+  user-id: 5429842373
+  username: hyperBush_bot
+  token: 5417845390:AAHuCLp_FlEFWF8XvNY57ahFhX_sQRGx9Jo
+
+opencv-dll: lib/opencv/opencv_java460.dll
+ocr:
+  source: D:\xsx-tools\ocr\tessdata
+  language: chi_sim
+
+jwt:
+  secret: glx6Acv_F8p5cjEIQ_VZAOAhDsT0FJP2VZYwZRj3DqhxeTbeynSorRHWcQijpCRl
+  #86400位1天24小时即60*60*24
+  expireTime: 86400
+
+
+# ========================== ↓↓↓↓↓↓ forest配置 ↓↓↓↓↓↓ ==========================
+forest:
+  bean-id: config0 # 在spring上下文中bean的id, 默认值为forestConfiguration
+  backend: okhttp3 # 后端HTTP API： okhttp3 【支持`okhttp3`/`httpclient`】
+  max-connections: 1000 # 连接池最大连接数，默认值为500
+  max-route-connections: 500 # 每个路由的最大连接数，默认值为500
+  timeout: 3000 # 请求超时时间，单位为毫秒, 默认值为3000
+  connect-timeout: 3000 # 连接超时时间，单位为毫秒, 默认值为2000
+  retry-count: 0 # 请求失败后重试次数，默认为0次不重试
+  ssl-protocol: SSLv3 # 单向验证的HTTPS的默认SSL协议，默认为SSLv3
+  logEnabled: true # 打开或关闭日志，默认为true

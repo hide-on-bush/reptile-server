@@ -33,7 +33,7 @@ public class PaytmService {
     @Autowired
     StringRedisTemplate redisTemplate;
 
-    public void login(BankUser bankUser) throws Exception{
+    public void login(BankUser bankUser) throws Exception {
         String loginUrl = "https://dashboard.paytm.com/login/ ";
         System.setProperty("webdriver.chrome.driver", "D:/xsx-tools/chormeDriver/chromedriver.exe");
         ChromeDriver chromeDriver = new ChromeDriver();
@@ -43,7 +43,7 @@ public class PaytmService {
         StringBuilder cookie = new StringBuilder();
         for (Cookie item : cookies) {
             if (item.toString().contains("signalSDKVisitorId") || item.toString().contains("XSRF-TOKEN")
-                || item.toString().contains("SESSION")) {
+                    || item.toString().contains("SESSION")) {
                 String[] array = item.toString().split(";");
                 cookie.append(array[0]).append(";");
             }
@@ -53,7 +53,7 @@ public class PaytmService {
         if (StringUtils.isBlank(authState)) {
             return;
         }
-        Map<String, String>  step2ResultMap = step2Request(authState, bankUser, cookie.toString());
+        Map<String, String> step2ResultMap = step2Request(authState, bankUser, cookie.toString());
         System.out.println("step2ResultMap=======" + step2ResultMap);
         if (CollectionUtils.isEmpty(step2ResultMap) || "FAILURE".equals(step2ResultMap.get("status"))) {
             return;
@@ -72,7 +72,7 @@ public class PaytmService {
         String otp = redisTemplate.opsForValue().get("otp");
         String step3Url = "https://accounts.paytm.com/login/validate/otp";
         Map<String, String> step3Header = sendOtpHeader(cookie.toString());
-        String  step3Body = "{\"otp\":\""+ otp+ "\",\"state\":\""+ step2ResultMap.get("stateCode") +"\",\"csrfToken\":\""+ authState+ "\"}";
+        String step3Body = "{\"otp\":\"" + otp + "\",\"state\":\"" + step2ResultMap.get("stateCode") + "\",\"csrfToken\":\"" + authState + "\"}";
         System.out.println("step3ReqBody == " + step3Body);
         Response response3 = HttpUtil.sent("POST", step3Url, "application/json", step3Body, step3Header);
         System.out.println("step3Response.code = " + response3.code());
@@ -83,7 +83,7 @@ public class PaytmService {
     }
 
 
-    public String step1Request(String cookie) throws Exception{
+    public String step1Request(String cookie) throws Exception {
         String authState = "";
         String step1Url = "https://accounts.paytm.com/um/authorize/init";
         Map<String, String> step1Header = step1Header(cookie);
@@ -95,14 +95,14 @@ public class PaytmService {
             System.out.println("第一步responseBody = " + responseBody);
             JSONObject jsonObject = JSON.parseObject(responseBody);
             System.out.println("step1.response.body =" + jsonObject);
-            JSONObject data = (JSONObject)jsonObject.get("data");
+            JSONObject data = (JSONObject) jsonObject.get("data");
             authState = data.getString("authState");
         }
         System.out.println("authState=" + authState);
         return authState;
     }
 
-    public static final String  USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
+    public static final String USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
     public Map<String, String> step1Header(String cookie) {
         Map<String, String> map = new HashMap<>();
@@ -128,12 +128,12 @@ public class PaytmService {
     }
 
 
-    public Map<String, String> step2Request(String authState, BankUser bankUser, String cookie) throws Exception{
+    public Map<String, String> step2Request(String authState, BankUser bankUser, String cookie) throws Exception {
         Map<String, String> result = new HashMap<>();
         String step2Url = "https://accounts.paytm.com/um/authorize/proceed";
         Map<String, String> step2Header = step2Header(cookie);
         //{"userName":"9059860438","password":"Wp123456@!","clientId":"paytm-unified-merchant-panel","csrfToken":"aa623c8a-bf4d-51e6-afed-5538633e41b8"}
-        String body = "{\"userName\":\"" +bankUser.getLoginName() + "\",\"password\":\"" + bankUser.getPassword() + "\",\"clientId\":\"paytm-unified-merchant-panel\",\"csrfToken\":\"" +authState + "\"}";
+        String body = "{\"userName\":\"" + bankUser.getLoginName() + "\",\"password\":\"" + bankUser.getPassword() + "\",\"clientId\":\"paytm-unified-merchant-panel\",\"csrfToken\":\"" + authState + "\"}";
         System.out.println("step2RequestBody" + body);
         Response response = HttpUtil.sent("POST", step2Url, "application/json", body, step2Header);
         System.out.println("step2Response.code = " + response.code());
@@ -197,9 +197,6 @@ public class PaytmService {
         map.put("sec-ch-ua-platform", "\"Windows\"");
         return map;
     }
-
-
-
 
 
 }

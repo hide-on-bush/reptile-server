@@ -27,20 +27,20 @@ public class SendMsg {
     final RabbitTemplate.ConfirmCallback confirmCallback = new RabbitTemplate.ConfirmCallback() {
         @Override
         public void confirm(CorrelationData correlationData, boolean ack, String s) {
-            System.out.println("CorrelationData: "+correlationData);
-            if (ack){
+            System.out.println("CorrelationData: " + correlationData);
+            if (ack) {
                 //如果confirm返回成功 则进行更新
                 System.out.println("更新");
-            }else{
+            } else {
                 //失败则进行具体的后续操作; 重试或者补偿等手段
                 System.out.println("异常处理....");
             }
         }
     };
 
-    public void sendOrder(Order order) throws Exception{
+    public void sendOrder(Order order) throws Exception {
         CorrelationData correlationData = new CorrelationData();
-        correlationData.setId(order.getMessageId()+"");
+        correlationData.setId(order.getMessageId() + "");
         rabbitTemplate.setConfirmCallback(confirmCallback);
         String orderStr = JSONObject.toJSONString(order);
         //rabbitTemplate.send("order-exchange","order.demo",new Message(orderStr.getBytes(),new MessageProperties()));
@@ -50,7 +50,6 @@ public class SendMsg {
                 correlationData);       //correlationData 消息唯一ID
 
     }
-
 
 
 }

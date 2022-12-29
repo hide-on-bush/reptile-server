@@ -19,17 +19,17 @@ import java.net.Proxy;
 @Configuration
 public class RestTemplateConfig {
     @Bean
-    public RestTemplate restTemplate(@Qualifier("simpleClientHttpRequestFactory") SimpleClientHttpRequestFactory factory){
+    public RestTemplate restTemplate(@Qualifier("simpleClientHttpRequestFactory") SimpleClientHttpRequestFactory factory) {
         return new RestTemplate(factory);
     }
 
     @Bean
-    public SimpleClientHttpRequestFactory simpleClientHttpRequestFactory(){
+    public SimpleClientHttpRequestFactory simpleClientHttpRequestFactory() {
         //配置restTemplate的代理
         Proxy proxy = new Proxy(java.net.Proxy.Type.HTTP, new InetSocketAddress("192.168.1.6", 4780));
         SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
-        factory.setConnectTimeout(50*1000); //毫秒
-        factory.setReadTimeout(50*1000); //毫秒
+        factory.setConnectTimeout(50 * 1000); //毫秒
+        factory.setReadTimeout(50 * 1000); //毫秒
         factory.setProxy(proxy);
         return factory;
     }

@@ -21,10 +21,10 @@ class SendMsgTest {
     private SendMsg sendMsg;
 
     @Autowired
-    private Recieve  recieve;
+    private Recieve recieve;
 
     @Test
-    void sendOrder() throws Exception{
+    void sendOrder() throws Exception {
         Order order = new Order();
         order.setId(1L);
         order.setName("测试订单1");
@@ -33,7 +33,7 @@ class SendMsgTest {
     }
 
     @Test
-    void testReceive(){
+    void testReceive() {
         recieve.receive();
     }
 }

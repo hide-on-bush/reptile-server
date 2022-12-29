@@ -16,7 +16,7 @@ public class OkHttpClientController {
     private OkHttpClientService okHttpClientService;
 
     @GetMapping("/execute")
-    public String syncNetAccess(){
+    public String syncNetAccess() {
         return okHttpClientService.syncGet();
     }
 

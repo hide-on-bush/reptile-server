@@ -14,12 +14,12 @@ public class JsoupController {
     private JsoupService jsoupService;
 
     @GetMapping("/connection")
-    public String jsoupConnection(){
+    public String jsoupConnection() {
         return jsoupService.jsoupConnection();
     }
 
     @GetMapping("/open")
-    public String littleRedBook() throws Exception{
+    public String littleRedBook() throws Exception {
         return jsoupService.littleRedBook();
     }
 }

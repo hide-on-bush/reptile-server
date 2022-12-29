@@ -5,7 +5,7 @@ import java.util.Date;
 public class BankUser {
 
     /**
-     *  数据库自增ID
+     * 数据库自增ID
      */
     private Integer id;
 
@@ -15,7 +15,7 @@ public class BankUser {
     private String userId;
 
     /**
-     *  登陆名称
+     * 登陆名称
      */
     private String loginName;
 

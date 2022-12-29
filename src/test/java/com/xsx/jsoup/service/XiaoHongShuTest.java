@@ -20,7 +20,7 @@ class XiaoHongShuTest {
     private XiaoHongShu xiaoHongShu;
 
     @Test
-    void login() throws Exception{
+    void login() throws Exception {
         xiaoHongShu.test();
     }
 }

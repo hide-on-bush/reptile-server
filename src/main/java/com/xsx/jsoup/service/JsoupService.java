@@ -17,21 +17,21 @@ public class JsoupService {
 
     /**
      * 从URL加载文档，使用Jsoup.connect()方法从URL加载HTML。
+     *
      * @return
      */
-      public String jsoupConnection(){
-          try {
-              Document document = Jsoup.connect("http://www.baidu.com").get();
-              return document.title();
-          }
-          catch (IOException e) {
-              e.printStackTrace();
-              return null;
-          }
-      }
+    public String jsoupConnection() {
+        try {
+            Document document = Jsoup.connect("http://www.baidu.com").get();
+            return document.title();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 
 
-    public String littleRedBook() throws Exception{
+    public String littleRedBook() throws Exception {
 
         OkHttpClient okHttpClient = OkHttpUtil.getInstance();
         Request okRequest = new Request.Builder().url("https://www.xiaohongshu.com/").build();
@@ -47,6 +47,7 @@ public class JsoupService {
 
     /**
      * 获取HTML页面中的所有链接
+     *
      * @param html
      */
     public void getLinksFromHtml(String html) {
@@ -58,7 +59,7 @@ public class JsoupService {
         }
     }
 
-    public void getImagesFromHtml(String html){
+    public void getImagesFromHtml(String html) {
         Document document = Jsoup.parse(html);
         //this.getById(document);
         Elements images = document.select("img[src]");

@@ -6,6 +6,7 @@ package com.xsx.jsoup.config;
  * @Version: 1.0
  * @Discription:
  **/
+
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -30,15 +31,16 @@ import java.time.Duration;
 public class RedisConfig extends CachingConfigurerSupport {
 
 
-    private static ThreadLocal<RedisTemplate<String, Object>>  redisTemplateThreadLocal = new ThreadLocal<>();
+    private static ThreadLocal<RedisTemplate<String, Object>> redisTemplateThreadLocal = new ThreadLocal<>();
 
     /**
-     *  自定义RedisTemplate
+     * 自定义RedisTemplate
+     *
      * @param redisConnectionFactory
      * @return
      */
     @Bean(name = "myRedisTemplate")
-    public  RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
+    public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
         //为了开发方便一般使用 <String, Object>
         RedisTemplate<String, Object> template = new RedisTemplate<>();
         template.setConnectionFactory(redisConnectionFactory);

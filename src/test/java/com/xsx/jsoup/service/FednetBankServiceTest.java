@@ -25,13 +25,13 @@ class FednetBankServiceTest {
     private FednetBankService fednetBankService;
 
     @Test
-    void loginAndGetHeaders() throws Exception{
-       // fednetBankService.getVerificationCode("C:\\Users\\Administrator\\Desktop\\captcha1.jpg");
+    void loginAndGetHeaders() throws Exception {
+        // fednetBankService.getVerificationCode("C:\\Users\\Administrator\\Desktop\\captcha1.jpg");
         fednetBankService.loginAndGetHeaders();
     }
 
     @Test
-    void test1() throws Exception{
+    void test1() throws Exception {
         ITesseract instance = new Tesseract();
         File tessDataFolder = LoadLibs.extractTessResources("tessdata");
         //instance.setLanguage("chi_sim");//英文库识别数字比较准确
@@ -49,12 +49,12 @@ class FednetBankServiceTest {
 
     @Test
     public void doOcr() throws Exception {
-            File file = new File("C:\\Users\\Administrator\\Desktop\\captcha.jpg");
-            Tesseract tesseract = new Tesseract();
-            tesseract.setDatapath("D:\\xsx-tools\\ocr\\tessdata");
-            tesseract.setLanguage("eng");
-            String result = tesseract.doOCR(file);
-            System.out.println(result);
+        File file = new File("C:\\Users\\Administrator\\Desktop\\captcha.jpg");
+        Tesseract tesseract = new Tesseract();
+        tesseract.setDatapath("D:\\xsx-tools\\ocr\\tessdata");
+        tesseract.setLanguage("eng");
+        String result = tesseract.doOCR(file);
+        System.out.println(result);
 
     }
 

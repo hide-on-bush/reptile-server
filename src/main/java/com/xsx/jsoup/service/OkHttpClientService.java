@@ -13,9 +13,10 @@ public class OkHttpClientService {
 
     /**
      * 同步GET方法，execute()方法会抛出IOException异常
+     *
      * @return
      */
-    public String syncGet(){
+    public String syncGet() {
         try {
             //创建OkHttpClient实例，主要用于请求网络
             OkHttpClient okHttpClient = new OkHttpClient();
@@ -42,6 +43,7 @@ public class OkHttpClientService {
 
     /**
      * 异步GET方法
+     *
      * @throws IOException
      */
     public void asyncGet() throws IOException {
@@ -50,7 +52,7 @@ public class OkHttpClientService {
         OkHttpClient okHttpClient = new OkHttpClient();
 
         //创建Request实例，这里配置了请求头 addHeader()
-        Request okRequest = new Request.Builder().url("http://toutiao-ali.juheapi.com/toutiao/index?type=caijing").addHeader("name","value").build();
+        Request okRequest = new Request.Builder().url("http://toutiao-ali.juheapi.com/toutiao/index?type=caijing").addHeader("name", "value").build();
 
         //GET请求，回调函数中获取相应结果
         okHttpClient.newCall(okRequest).enqueue(new Callback() {
@@ -58,13 +60,13 @@ public class OkHttpClientService {
             //失败回调
             @Override
             public void onFailure(Call call, IOException e) {
-                log.error("+++++++++++++++++++++",e.getMessage());
+                log.error("+++++++++++++++++++++", e.getMessage());
             }
 
             //成功回调
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                log.info("+++++++++++++++++++++",response.body().string());
+                log.info("+++++++++++++++++++++", response.body().string());
             }
         });
     }
@@ -72,7 +74,7 @@ public class OkHttpClientService {
     /**
      * 异步post请求
      */
-    public void asyncPost(){
+    public void asyncPost() {
 
         //创建OkHttpClient实例，主要用于请求网络
         OkHttpClient okHttpClient = new OkHttpClient();
@@ -80,7 +82,7 @@ public class OkHttpClientService {
         //创建表单请求体
         FormBody.Builder formBody = new FormBody.Builder();
         //传递键值对参数
-        formBody.add("name","shuaige");
+        formBody.add("name", "shuaige");
 
         //创建Request实例，设置POST参数
         Request okRequest = new Request.Builder().url("http://toutiao-ali.juheapi.com/toutiao/index?type=caijing").post(formBody.build()).build();
@@ -89,11 +91,12 @@ public class OkHttpClientService {
         okHttpClient.newCall(okRequest).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                log.error("+++++++++++++++++++++ err={}",e.getMessage());
+                log.error("+++++++++++++++++++++ err={}", e.getMessage());
             }
+
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                log.info("+++++++++++++++++++++",response.body().string());
+                log.info("+++++++++++++++++++++", response.body().string());
             }
         });
 
@@ -103,7 +106,7 @@ public class OkHttpClientService {
     /**
      * 同步post请求
      */
-    public void syncPost() throws Exception{
+    public void syncPost() throws Exception {
 
         //创建OkHttpClient实例，主要用于请求网络
         OkHttpClient okHttpClient = new OkHttpClient();
@@ -111,7 +114,7 @@ public class OkHttpClientService {
         //创建表单请求体
         FormBody.Builder formBody = new FormBody.Builder();
         //传递键值对参数
-        formBody.add("name","shuaige");
+        formBody.add("name", "shuaige");
 
         //创建Request实例，设置POST参数
         Request okRequest = new Request.Builder().url("http://toutiao-ali.juheapi.com/toutiao/index?type=caijing").post(formBody.build()).build();

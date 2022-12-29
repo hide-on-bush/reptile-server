@@ -25,23 +25,23 @@ public class RedisService {
     @Autowired
     StringRedisTemplate redisTemplate;
 
-    public void read(){
+    public void read() {
         String otp = null;
-        while(StringUtils.isBlank(otp)) {
+        while (StringUtils.isBlank(otp)) {
             log.info("阻塞读取otp={}", otp);
-            otp = (String)redisTemplate.opsForHash().get("otp","hyperbush@proto.me");
+            otp = (String) redisTemplate.opsForHash().get("otp", "hyperbush@proto.me");
         }
         System.out.println(otp);
     }
 
-    public void set(){
+    public void set() {
         redisTemplate.opsForHash().put("otp", "hyperbush123@proto.me", "123456");
         redisTemplate.opsForHash().put("otp", "hyperbush@proto.me", "888888");
         redisTemplate.opsForHash().put("otp", "hyperbush123@outlook.com", "999999");
         redisTemplate.opsForHash().put("otp", "hyperbush@proto.me", "666666");
     }
 
-    public void bRead(){
+    public void bRead() {
         System.out.println("阻塞读");
         Object o = redisTemplate.opsForHash().get("admin", "name");
         System.out.println(o);
@@ -49,8 +49,16 @@ public class RedisService {
         System.out.println(hello);
     }
 
-    public void write(){
+    public void write() {
         redisTemplate.opsForHash().put("admin", "name", "root");
         redisTemplate.opsForList().leftPush("hello", "world");
+    }
+
+    public void set(String key, String value, long expire) {
+        redisTemplate.opsForValue().set(key, value, expire, TimeUnit.SECONDS);
+    }
+
+    public String get(String key) {
+        return redisTemplate.opsForValue().get(key);
     }
 }

@@ -40,14 +40,14 @@ import java.util.logging.Level;
 @Slf4j
 public class XiaoHongShu {
 
-    public void test() throws Exception{
+    public void test() throws Exception {
         Map<String, Map<String, String>> map = this.login();
         Map<String, String> headers = map.get("requestHeader");
         Response response = this.send(headers, "https://www.processon.com/folder/loadfiles");
         System.out.println(response.body());
     }
 
-    public  Map<String, Map<String, String>> login() {
+    public Map<String, Map<String, String>> login() {
         Map<String, Map<String, String>> map = new HashMap<>();
         System.setProperty("webdriver.chrome.driver", "D:/xsx-tools/chormeDriver/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
@@ -76,13 +76,13 @@ public class XiaoHongShu {
         WebElement accountElement = chromeDriver.findElement(By.cssSelector("#other-logins > ol > li.link-to-account > span"));
         accountElement.click();
 
-        WebElement nameInput =new WebDriverWait(chromeDriver, Duration.ofSeconds(50L)).until(ExpectedConditions
+        WebElement nameInput = new WebDriverWait(chromeDriver, Duration.ofSeconds(50L)).until(ExpectedConditions
                 .presenceOfElementLocated(By.name("name")));
         nameInput.sendKeys("15068170059");
-        WebElement pwdInput =new WebDriverWait(chromeDriver, Duration.ofSeconds(50L)).until(ExpectedConditions
+        WebElement pwdInput = new WebDriverWait(chromeDriver, Duration.ofSeconds(50L)).until(ExpectedConditions
                 .presenceOfElementLocated(By.name("pwd")));
         pwdInput.sendKeys("xsx123456");
-        WebElement submitBut =new WebDriverWait(chromeDriver, Duration.ofSeconds(50L)).until(ExpectedConditions
+        WebElement submitBut = new WebDriverWait(chromeDriver, Duration.ofSeconds(50L)).until(ExpectedConditions
                 .presenceOfElementLocated(By.id("submit-pwd")));
         submitBut.click();
         chromeDriver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
@@ -93,7 +93,7 @@ public class XiaoHongShu {
         return map;
     }
 
-    public Map<String,String> parseMap(String source) {
+    public Map<String, String> parseMap(String source) {
         Map<String, String> result = new HashMap<>();
         if (StringUtils.isNotBlank(source)) {
             if (source.trim().startsWith("[")) {
@@ -101,10 +101,10 @@ public class XiaoHongShu {
                 List<JSONObject> jsonObjectList = array.toJavaList(JSONObject.class);
                 if (!CollectionUtils.isEmpty(jsonObjectList)) {
                     for (JSONObject item : jsonObjectList) {
-                        result.putAll((Map)JSON.parse(item.toString()));
+                        result.putAll((Map) JSON.parse(item.toString()));
                     }
                 }
-            }else {
+            } else {
                 result = (Map) JSON.parse(source);
             }
         }
@@ -114,7 +114,7 @@ public class XiaoHongShu {
 
     public Set<JSONObject> getRequestHeaders(List<LogEntry> logs) {
         Set<JSONObject> requestHeader = new HashSet<>();
-        if (!CollectionUtils.isEmpty(logs)){
+        if (!CollectionUtils.isEmpty(logs)) {
             for (LogEntry entry : logs) {
                 JSONObject json = JSONObject.parseObject(entry.getMessage());
                 JSONObject message = json.getJSONObject("message");
@@ -125,7 +125,7 @@ public class XiaoHongShu {
                     JSONObject request = params.getJSONObject("request");
                     String messageUrl = request.getString("url");
                     if ("https://www.processon.com/".equals(messageUrl)) {
-                        requestHeader.add((JSONObject)request.get("headers"));
+                        requestHeader.add((JSONObject) request.get("headers"));
                     }
                 }
             }
@@ -147,17 +147,15 @@ public class XiaoHongShu {
 //                .build();
 
 
-
-
         //"https://app.my.idfcfirstbank.com/api/payments/v1/accounts"
         HashMap<String, String> paramMap = new HashMap<>();
         Request.Builder builder = new Request.Builder().url(url);
-        builder.post(RequestBody.create(MediaType.parse("application/json; charset=utf-8"),paramMap.toString()));
+        builder.post(RequestBody.create(MediaType.parse("application/json; charset=utf-8"), paramMap.toString()));
         builder.addHeader("content-type", "application/json");
         if (!CollectionUtils.isEmpty(headers)) {
-            headers.forEach((k,v) ->{
+            headers.forEach((k, v) -> {
                 log.info("k={},v={}", k, v);
-                builder.addHeader(k,v);
+                builder.addHeader(k, v);
             });
         }
 

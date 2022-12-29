@@ -20,12 +20,12 @@ class HarServiceTest {
     HarService harService;
 
     @Test
-    void har() throws Exception{
+    void har() throws Exception {
         System.out.println(harService.har());
     }
 
     @Test
-    void har2() throws Exception{
+    void har2() throws Exception {
         harService.har2();
     }
 }

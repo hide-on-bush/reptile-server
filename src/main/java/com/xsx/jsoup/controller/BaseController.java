@@ -32,10 +32,9 @@ public abstract class BaseController {
     }
 
 
-
     @SuppressWarnings("unchecked")
     public <T> T getRequestAttr(String key) {
-        return (T)request.getAttribute(key);
+        return (T) request.getAttribute(key);
     }
 
     public void setRequestAttr(String key, Object obj) {
@@ -44,8 +43,8 @@ public abstract class BaseController {
 
     @SuppressWarnings("unchecked")
     public <T> T getSessionAttr(String key) {
-        if(request.getSession() != null) {
-            return (T)request.getSession().getAttribute(key);
+        if (request.getSession() != null) {
+            return (T) request.getSession().getAttribute(key);
         }
         return null;
     }

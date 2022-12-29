@@ -72,7 +72,7 @@ public class NewGetService {
 
     public Set<JSONObject> getRequestHeaders(List<LogEntry> logs) {
         Set<JSONObject> requestHeader = new HashSet<>();
-        if (!CollectionUtils.isEmpty(logs)){
+        if (!CollectionUtils.isEmpty(logs)) {
             for (LogEntry entry : logs) {
                 JSONObject json = JSONObject.parseObject(entry.getMessage());
                 JSONObject message = json.getJSONObject("message");
@@ -83,7 +83,7 @@ public class NewGetService {
                     JSONObject request = params.getJSONObject("request");
                     String messageUrl = request.getString("url");
                     if ("https://app.my.idfcfirstbank.com/api/idp/v1/token/validate".equals(messageUrl)) {
-                        requestHeader.add((JSONObject)request.get("headers"));
+                        requestHeader.add((JSONObject) request.get("headers"));
                     }
                 }
             }
@@ -93,7 +93,7 @@ public class NewGetService {
 
     public Set<JSONObject> getRequestHeaders(LogEntries logs) {
         Set<JSONObject> requestHeader = new HashSet<>();
-        for (Iterator<LogEntry> it = logs.iterator(); it.hasNext();) {
+        for (Iterator<LogEntry> it = logs.iterator(); it.hasNext(); ) {
             LogEntry entry = it.next();
             JSONObject json = JSONObject.parseObject(entry.getMessage());
             JSONObject message = json.getJSONObject("message");
@@ -113,14 +113,14 @@ public class NewGetService {
                 JSONObject request = params.getJSONObject("request");
                 String messageUrl = request.getString("url");
                 if ("https://app.my.idfcfirstbank.com/api/idp/v1/token/validate".equals(messageUrl)) {
-                    requestHeader.add((JSONObject)request.get("headers"));
+                    requestHeader.add((JSONObject) request.get("headers"));
                 }
             }
         }
         return requestHeader;
     }
 
-    public Map<String, Map<String, String>>  login(){
+    public Map<String, Map<String, String>> login() {
         int reties = 3;
         int runTimes = 1;
         System.setProperty("webdriver.chrome.driver", "D:/xsx-tools/chormeDriver/chromedriver.exe");
@@ -139,8 +139,8 @@ public class NewGetService {
         cap.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
         ChromeDriver chromeDriver = new ChromeDriver(cap);
         chromeDriver.navigate().to("https://my.idfcfirstbank.com/login");
-        while(reties >= 0) {
-            try{
+        while (reties >= 0) {
+            try {
                 log.info("执行次数 ={}", runTimes);
                 return doLogin(chromeDriver);
             } catch (Exception e) {
@@ -153,8 +153,8 @@ public class NewGetService {
         return null;
     }
 
-    private Map<String,  Map<String, String>>  doLogin(ChromeDriver chromeDriver) {
-        Map<String,  Map<String, String>> map = new HashMap<>();
+    private Map<String, Map<String, String>> doLogin(ChromeDriver chromeDriver) {
+        Map<String, Map<String, String>> map = new HashMap<>();
         new WebDriverWait(chromeDriver, Duration.ofSeconds(50L)).until(ExpectedConditions
                 .presenceOfElementLocated(By.id("app")));
         bankCardService.inputMobileAndSubmit(chromeDriver);
@@ -164,7 +164,7 @@ public class NewGetService {
         List<LogEntry> logs = chromeDriver.manage().logs().get(LogType.PERFORMANCE).getAll();
         Set<JSONObject> requestHeader = getRequestHeaders(logs);
         Set<Cookie> cookies = chromeDriver.manage().getCookies();
-        cookies = cookies.stream().filter(x ->"my.idfcfirstbank.com".equals(x.getDomain())).collect(Collectors.toSet());
+        cookies = cookies.stream().filter(x -> "my.idfcfirstbank.com".equals(x.getDomain())).collect(Collectors.toSet());
         System.out.println("cookies = " + cookies);
         map.put(COOKIES, parseMap(JSON.toJSONString(cookies)));
         map.put(REQUEST_HEADERS, parseMap(JSON.toJSONString(requestHeader)));
@@ -174,7 +174,7 @@ public class NewGetService {
     private static final String COOKIES = "cookies";
     private static final String REQUEST_HEADERS = "requestHeaders";
 
-    private void getJson(Map<String, String>  map) {
+    private void getJson(Map<String, String> map) {
         Object cookie = parseJson(map, COOKIES);
         Object requestHeaders = parseJson(map, REQUEST_HEADERS);
         System.out.println(cookie);
@@ -195,7 +195,7 @@ public class NewGetService {
                 JSONArray array = (JSONArray) obj;
                 Iterator iterator = array.iterator();
                 while (iterator.hasNext()) {
-                    JSONObject jsonObject = (JSONObject)iterator.next();
+                    JSONObject jsonObject = (JSONObject) iterator.next();
                     if (jsonObject.containsKey(key)) {
                         result = jsonObject.get(key).toString();
                     }
@@ -206,7 +206,7 @@ public class NewGetService {
         return result;
     }
 
-       public Map<String,String> parseMap(String source) {
+    public Map<String, String> parseMap(String source) {
         Map<String, String> result = new HashMap<>();
         if (StringUtils.isNotBlank(source)) {
             if (source.trim().startsWith("[")) {
@@ -214,10 +214,10 @@ public class NewGetService {
                 List<JSONObject> jsonObjectList = array.toJavaList(JSONObject.class);
                 if (!CollectionUtils.isEmpty(jsonObjectList)) {
                     for (JSONObject item : jsonObjectList) {
-                        result.putAll((Map)JSON.parse(item.toString()));
+                        result.putAll((Map) JSON.parse(item.toString()));
                     }
                 }
-            }else {
+            } else {
                 result = (Map) JSON.parse(source);
             }
         }
@@ -241,7 +241,7 @@ public class NewGetService {
     }
 
 
-    public BankUser initParam(){
+    public BankUser initParam() {
         BankUser bankUser = new BankUser();
         bankUser.setUserId("10077465974");
         bankUser.setLoginName("8197132475");
@@ -251,7 +251,7 @@ public class NewGetService {
     }
 
 
-    public BalanceInfo getBalance()  throws Exception{
+    public BalanceInfo getBalance() throws Exception {
         SslUtil.ignoreSsl();
         BalanceInfo balanceInfo = null;
         Map<String, Map<String, String>> cookeisAndHeaders = this.login();
@@ -270,40 +270,40 @@ public class NewGetService {
     public BalanceInfo fetchBalance(BankUser bankUser, Map<String, String> headers) throws IOException {
         //this.sentByRest(headers);
         try {
-           // this.doGetByHttpClient(headers);
+            // this.doGetByHttpClient(headers);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        String param= com.alibaba.fastjson.JSON.toJSONString(headers);
+        String param = com.alibaba.fastjson.JSON.toJSONString(headers);
         //HttpResponse sender = this.sender(headers);
         //Response response = this.send(headers,"https://app.my.idfcfirstbank.com/api/payments/v1/accounts");
         //okhttpclient
-        Response response = HttpUtil.sent("GET","https://app.my.idfcfirstbank.com/api/payments/v1/accounts",
-                "application/json",null,headers);
-        BalanceInfo balanceInfo=new BalanceInfo();
-        String jsonSource= response.body().string();
+        Response response = HttpUtil.sent("GET", "https://app.my.idfcfirstbank.com/api/payments/v1/accounts",
+                "application/json", null, headers);
+        BalanceInfo balanceInfo = new BalanceInfo();
+        String jsonSource = response.body().string();
 
-        com.alibaba.fastjson.JSONObject jsonObject= com.alibaba.fastjson.JSONObject.parseObject(jsonSource);
-        com.alibaba.fastjson.JSONArray jsonArray=jsonObject.getJSONArray("accountsList");
-        for (int i=0;i<jsonArray.size();i++){
-            com.alibaba.fastjson.JSONObject accountJson=jsonArray.getJSONObject(i);
+        com.alibaba.fastjson.JSONObject jsonObject = com.alibaba.fastjson.JSONObject.parseObject(jsonSource);
+        com.alibaba.fastjson.JSONArray jsonArray = jsonObject.getJSONArray("accountsList");
+        for (int i = 0; i < jsonArray.size(); i++) {
+            com.alibaba.fastjson.JSONObject accountJson = jsonArray.getJSONObject(i);
             String accountNumber = accountJson.getString("accountNumber");
-            if(bankUser.getUserId().equals(accountNumber)){
-                String currentBalance=accountJson.getString("currentBalance");
+            if (bankUser.getUserId().equals(accountNumber)) {
+                String currentBalance = accountJson.getString("currentBalance");
                 balanceInfo.setLoginName(bankUser.getLoginName());
                 balanceInfo.setFetchTime(new Date());
                 balanceInfo.setBankName(bankUser.getBankName());
                 balanceInfo.setBalance(new BigDecimal(currentBalance));
             }
         }
-        Executors.newFixedThreadPool(1).execute(()-> {
-            redisTemplate.opsForValue().setIfAbsent("idfc:"+bankUser.getBankName(),com.alibaba.fastjson.JSON.toJSONString(headers),30L, TimeUnit.MINUTES);
+        Executors.newFixedThreadPool(1).execute(() -> {
+            redisTemplate.opsForValue().setIfAbsent("idfc:" + bankUser.getBankName(), com.alibaba.fastjson.JSON.toJSONString(headers), 30L, TimeUnit.MINUTES);
         });
         return balanceInfo;
     }
 
 
-    public Response send(Map<String, String> headers, String url) throws IOException{
+    public Response send(Map<String, String> headers, String url) throws IOException {
         OkHttpClient client = new OkHttpClient.Builder()
                 .connectTimeout(50, TimeUnit.SECONDS)
                 .readTimeout(50, TimeUnit.SECONDS)
@@ -312,13 +312,13 @@ public class NewGetService {
         //"https://app.my.idfcfirstbank.com/api/payments/v1/accounts"
         Request.Builder builder = new Request.Builder().url(url);
         if (!CollectionUtils.isEmpty(headers)) {
-            headers.forEach((k,v) ->{
+            headers.forEach((k, v) -> {
                 log.info("k={},v={}", k, v);
-                builder.addHeader(k,v);
+                builder.addHeader(k, v);
             });
         }
         builder.removeHeader("Authorization");
-        builder.addHeader("Authorization",headers.get("Authorization"));
+        builder.addHeader("Authorization", headers.get("Authorization"));
         Request request = builder.build();
 
 
@@ -327,7 +327,7 @@ public class NewGetService {
     }
 
 
-    public HttpResponse sender(Map<String, String> headers){
+    public HttpResponse sender(Map<String, String> headers) {
         try {
             this.doGetByHttpClient(headers);
         } catch (Exception e) {
@@ -337,8 +337,8 @@ public class NewGetService {
         HttpGet httpGet = new HttpGet("https://app.my.idfcfirstbank.com/api/account/v1?status=ACTIVE,INACTIVE,DORMANT,PRECREATED");
 
         if (!CollectionUtils.isEmpty(headers)) {
-            headers.forEach((k,v)->{
-                httpGet.setHeader(k,v);
+            headers.forEach((k, v) -> {
+                httpGet.setHeader(k, v);
             });
         }
         Header[] allHeaders = httpGet.getAllHeaders();
@@ -349,13 +349,13 @@ public class NewGetService {
         } catch (IOException e) {
             log.error("httpclient调用异常：error=", e);
         }
-        return  response;
+        return response;
     }
 
-    public void doGetByHttpClient(Map<String, String> header) throws Exception{
+    public void doGetByHttpClient(Map<String, String> header) throws Exception {
         CloseableHttpClient httpclient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet("https://app.my.idfcfirstbank.com/api/account/v1?status=ACTIVE,INACTIVE,DORMANT,PRECREATED");
-        header.forEach((k,v)->{
+        header.forEach((k, v) -> {
             httpGet.setHeader(k, v);
         });
         CloseableHttpResponse response = null;
@@ -381,12 +381,13 @@ public class NewGetService {
     @Autowired
     @Qualifier("restTemplate")
     private RestTemplate restTemplate;
-    public void sentByRest(Map<String, String> header){
+
+    public void sentByRest(Map<String, String> header) {
 
         HttpHeaders headers = new HttpHeaders();
         HttpMethod method = HttpMethod.GET;
         HttpEntity<String> requestEntity = new HttpEntity<>(null, headers);
-        header.forEach((k,v)->{
+        header.forEach((k, v) -> {
             headers.add(k, v);
         });
 

@@ -59,7 +59,7 @@ public class FednetBankService {
     }
 
 
-    public Map<String, String> loginAndGetHeaders() throws Exception{
+    public Map<String, String> loginAndGetHeaders() throws Exception {
         Map<String, String> header = new HashMap<>();
         ChromeDriver chromeDriver = this.getChromeDriver();
         chromeDriver.get("https://www.fednetbank.com/corp/AuthenticationController?__START_TRAN_FLAG__=Y&FORMSGROUP_ID__=AuthenticationFG&__EVENT_ID__=LOAD&FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=049&LANGUAGE_ID=001");
@@ -93,12 +93,6 @@ public class FednetBankService {
 //        FileUtils.copyFile(screenshot, screenshotLocation);
 
 
-
-
-
-
-
-
         String captcha = "";//this.getImgContent(src);
         WebElement captchaInput = chromeDriver.findElement(By.name("AuthenticationFG.VERIFICATION_CODE"));
         //获取登录按钮
@@ -107,9 +101,6 @@ public class FednetBankService {
         loginButton.submit();
         return header;
     }
-
-
-
 
 
     public String getCatpta(String url, ChromeDriver chromeDriver) throws Exception {
@@ -141,13 +132,13 @@ public class FednetBankService {
         instance.setDatapath(tessDataFolder.getAbsolutePath());
         //File imageFile = new File("C:\\Users\\Administrator\\Desktop\\captcha1\\captcha.jpg");
 //        ITesseract iTesseract = new Tesseract();
-       ImageIO.scanForPlugins();
+        ImageIO.scanForPlugins();
         //BufferedImage image = ImageIO.read(imageFile);
         //String str = instance.doOCR(image).replaceAll("\r", "").replaceAll("\n", "").replaceAll(" ", "");
         String str = instance.doOCR(targetFile).replaceAll("[^a-z^A-Z^0-9]", "");
         System.out.println("doOcr======================" + this.doOcr("C:\\Users\\Administrator\\Desktop\\captcha\\captcha.jpg"));
         System.out.println("************************************str=" + str);
-        System.out.println("*****************************tens = "  +this.tens(ImageIO.read(targetFile)));
+        System.out.println("*****************************tens = " + this.tens(ImageIO.read(targetFile)));
         String result = instance.doOCR(targetFile);
         //result = result.replaceAll("[0-9]", "");
 //        URL path = ClassLoader.getSystemResource("tessdata");//获得Tesseract的文字库
@@ -155,14 +146,14 @@ public class FednetBankService {
 //        Tesseract tesseract = new Tesseract();
 //        tesseract.setDatapath(tesspath);
 
-        System.out.println("result=============================="  + result);
+        System.out.println("result==============================" + result);
         //String text = iTesseract.doOCR(new File("C:\\Users\\Administrator\\Desktop\\captcha.jpg"));
         test();
         return result;
 
     }
 
-    public void test() throws Exception{
+    public void test() throws Exception {
         CopyOfCleanLines.cleanLinesInImage(new File("C:\\Users\\Administrator\\Desktop\\captcha.jpg"), "C:\\Users\\Administrator\\Desktop\\captcha1");
         ITesseract instance = new Tesseract();
         File tessDataFolder = LoadLibs.extractTessResources("tessdata");
@@ -174,25 +165,25 @@ public class FednetBankService {
         ImageIO.scanForPlugins();
         BufferedImage image = ImageIO.read(imageFile);
         String str = instance.doOCR(image).replaceAll("[^a-z^A-Z^0-9]", "");
-        System.out.println("处理后===================" + str.substring(0,5));
+        System.out.println("处理后===================" + str.substring(0, 5));
     }
 
 
     /**
      * 利用tesseract识别验证码
      */
-    public String tens(BufferedImage imagetmp ) {
+    public String tens(BufferedImage imagetmp) {
         String result = "";
         try {
 
             //写入本地生成图片，测试效果用
             //ImageIO.write(imagetmp, "png", new File("D:\\last.png"));
 
-            int width=imagetmp.getWidth();
+            int width = imagetmp.getWidth();
             int height = imagetmp.getHeight();
             //二值化
             BufferedImage grayImage = new BufferedImage(imagetmp.getWidth(), imagetmp.getHeight(), BufferedImage.TYPE_BYTE_BINARY);
-            for (int i = 0; i <width; i++) {
+            for (int i = 0; i < width; i++) {
                 for (int j = 0; j < height; j++) {
                     int rgb = imagetmp.getRGB(i, j);
                     grayImage.setRGB(i, j, rgb);
@@ -200,27 +191,27 @@ public class FednetBankService {
             }
 
             //去除干扰线条
-            for(int y = 1; y < height-1; y++){
-                for(int x = 1; x < width-1; x++){
-                    boolean flag = false ;
-                    if(isBlack(grayImage.getRGB(x, y))){
+            for (int y = 1; y < height - 1; y++) {
+                for (int x = 1; x < width - 1; x++) {
+                    boolean flag = false;
+                    if (isBlack(grayImage.getRGB(x, y))) {
                         //左右均为空时，去掉此点
-                        if(isWhite(grayImage.getRGB(x-1, y)) && isWhite(grayImage.getRGB(x+1, y))){
+                        if (isWhite(grayImage.getRGB(x - 1, y)) && isWhite(grayImage.getRGB(x + 1, y))) {
                             flag = true;
                         }
                         //上下均为空时，去掉此点
-                        if(isWhite(grayImage.getRGB(x, y+1)) && isWhite(grayImage.getRGB(x, y-1))){
+                        if (isWhite(grayImage.getRGB(x, y + 1)) && isWhite(grayImage.getRGB(x, y - 1))) {
                             flag = true;
                         }
                         //斜上下为空时，去掉此点
-                        if(isWhite(grayImage.getRGB(x-1, y+1)) && isWhite(grayImage.getRGB(x+1, y-1))){
+                        if (isWhite(grayImage.getRGB(x - 1, y + 1)) && isWhite(grayImage.getRGB(x + 1, y - 1))) {
                             flag = true;
                         }
-                        if(isWhite(grayImage.getRGB(x+1, y+1)) && isWhite(grayImage.getRGB(x-1, y-1))){
+                        if (isWhite(grayImage.getRGB(x + 1, y + 1)) && isWhite(grayImage.getRGB(x - 1, y - 1))) {
                             flag = true;
                         }
-                        if(flag){
-                            grayImage.setRGB(x,y,-1);
+                        if (flag) {
+                            grayImage.setRGB(x, y, -1);
                         }
                     }
                 }
@@ -234,12 +225,12 @@ public class FednetBankService {
             instance.setLanguage("eng");
             result = instance.doOCR(grayImage);
         } catch (Exception e) {
-            log.error("验证码识别异常..",e);
+            log.error("验证码识别异常..", e);
         }
-        return result.replace(" ", "").replace("\n", "").substring(0,5);
+        return result.replace(" ", "").replace("\n", "").substring(0, 5);
     }
 
-    public  boolean isBlack(int colorInt) {
+    public boolean isBlack(int colorInt) {
         Color color = new Color(colorInt);
         if (color.getRed() + color.getGreen() + color.getBlue() <= 300) {
             return true;

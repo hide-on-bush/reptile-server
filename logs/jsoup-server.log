@@ -1,0 +1,630 @@
+2022-12-05 11:12:41.209 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:12:41.264 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 840 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:12:41.265 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:12:41.267 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:12:45.188 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:12:45.199 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:12:45.309 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 63 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:12:57.127 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:12:57.182 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 16.781 seconds (JVM running for 20.874)
+2022-12-05 11:12:57.191 default [pool-4-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:12:57.191
+2022-12-05 11:13:00.279 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:16:14.433 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:16:14.475 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 2816 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:16:14.477 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:16:14.479 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:16:17.198 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:16:17.205 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:16:17.274 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:16:27.582 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:16:27.601 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:16:27.601
+2022-12-05 11:16:27.607 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 13.752 seconds (JVM running for 16.617)
+2022-12-05 11:16:29.296 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:18:30.384 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:18:30.411 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 9648 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:18:30.412 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:18:30.414 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:18:32.252 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:18:32.260 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:18:32.347 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 52 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:18:41.568 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:18:41.590 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:18:41.590
+2022-12-05 11:18:41.596 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 11.689 seconds (JVM running for 14.563)
+2022-12-05 11:18:43.521 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:19:07.938 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:19:07.969 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 7848 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:19:07.970 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:19:07.971 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:19:10.022 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:19:10.030 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:19:10.098 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 44 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:19:17.854 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:19:17.977 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:19:17.977
+2022-12-05 11:19:17.983 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 10.507 seconds (JVM running for 13.44)
+2022-12-05 11:19:20.739 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:20:52.896 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:20:52.939 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 236 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:20:52.940 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:20:52.942 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:20:55.076 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:20:55.085 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:20:55.162 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 52 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:21:14.472 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:21:14.510 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 9412 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:21:14.511 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:21:14.514 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:21:16.490 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:21:16.498 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:21:16.574 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 51 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:21:27.479 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:21:27.508 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:21:27.507
+2022-12-05 11:21:27.518 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 13.647 seconds (JVM running for 17.255)
+2022-12-05 11:21:29.330 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:22:23.643 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:22:23.643
+2022-12-05 11:23:54.493 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:23:54.530 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 2272 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:23:54.532 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:23:54.534 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:23:56.516 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:23:56.530 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:23:56.593 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:24:04.574 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:24:04.592 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:24:04.592
+2022-12-05 11:24:04.597 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 10.614 seconds (JVM running for 13.387)
+2022-12-05 11:24:06.349 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:25:53.752 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:25:53.785 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 3624 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:25:53.788 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:25:53.790 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:25:55.748 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:25:55.755 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:25:55.828 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 51 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:26:03.783 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:26:03.817 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:26:03.817
+2022-12-05 11:26:03.836 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 10.62 seconds (JVM running for 13.349)
+2022-12-05 11:26:05.601 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:27:02.930 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:27:02.976 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 9508 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:27:02.977 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:27:02.979 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:27:04.950 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:27:04.958 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:27:05.037 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 53 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:27:14.855 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:27:14.884 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:27:14.884
+2022-12-05 11:27:14.917 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 12.584 seconds (JVM running for 16.141)
+2022-12-05 11:27:16.621 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:27:26.605 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:27:26.604
+2022-12-05 11:28:16.500 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:28:16.500
+2022-12-05 11:28:28.044 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:28:28.044
+2022-12-05 11:28:49.909 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:28:49.950 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 4724 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:28:49.952 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:28:49.954 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:28:52.063 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:28:52.073 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:28:52.223 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 118 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:29:04.148 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:29:04.194 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:29:04.193
+2022-12-05 11:29:04.210 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 15.07 seconds (JVM running for 18.864)
+2022-12-05 11:29:06.369 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:29:17.256 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:29:17.256
+2022-12-05 11:29:25.472 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:29:25.472
+2022-12-05 11:29:25.478 default [hyperBush_bot Telegram Connection] [1;31mERROR[0;39m [36morg.telegram.telegrambots.updatesreceivers.DefaultBotSession[0;39m.getUpdatesFromServer [DefaultBotSession.java:268] - Software caused connection abort: socket write error
+java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at sun.security.ssl.OutputRecord.writeBuffer(OutputRecord.java:431)
+	at sun.security.ssl.OutputRecord.write(OutputRecord.java:417)
+	at sun.security.ssl.SSLSocketImpl.writeRecordInternal(SSLSocketImpl.java:864)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:835)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:705)
+	at sun.security.ssl.Handshaker.sendChangeCipherSpec(Handshaker.java:1055)
+	at sun.security.ssl.ClientHandshaker.sendChangeCipherAndFinish(ClientHandshaker.java:1191)
+	at sun.security.ssl.ClientHandshaker.serverHelloDone(ClientHandshaker.java:1103)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:344)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:957)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:892)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1050)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1363)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1391)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1375)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:354)
+	at org.telegram.telegrambots.facilities.proxysocketfactorys.SocksSSLConnectionSocketFactory.connectSocket(SocksSSLConnectionSocketFactory.java:40)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread$$Lambda$1237/1757653560.getUpdates(Unknown Source)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2022-12-05 11:29:39.286 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:29:39.286
+2022-12-05 11:30:43.382 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:30:43.382
+2022-12-05 11:30:43.394 default [hyperBush_bot Telegram Connection] [1;31mERROR[0;39m [36morg.telegram.telegrambots.updatesreceivers.DefaultBotSession[0;39m.getUpdatesFromServer [DefaultBotSession.java:268] - Software caused connection abort: socket write error
+java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at sun.security.ssl.OutputRecord.writeBuffer(OutputRecord.java:431)
+	at sun.security.ssl.OutputRecord.write(OutputRecord.java:417)
+	at sun.security.ssl.SSLSocketImpl.writeRecordInternal(SSLSocketImpl.java:864)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:835)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:705)
+	at sun.security.ssl.Handshaker.sendChangeCipherSpec(Handshaker.java:1055)
+	at sun.security.ssl.ClientHandshaker.sendChangeCipherAndFinish(ClientHandshaker.java:1191)
+	at sun.security.ssl.ClientHandshaker.serverHelloDone(ClientHandshaker.java:1103)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:344)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:957)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:892)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1050)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1363)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1391)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1375)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:354)
+	at org.telegram.telegrambots.facilities.proxysocketfactorys.SocksSSLConnectionSocketFactory.connectSocket(SocksSSLConnectionSocketFactory.java:40)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread$$Lambda$1237/1757653560.getUpdates(Unknown Source)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2022-12-05 11:35:00.278 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:35:00.306 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 9780 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:35:00.307 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:35:00.309 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:35:02.035 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:35:02.043 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:35:02.118 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:35:10.398 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:35:10.415 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:35:10.415
+2022-12-05 11:35:10.423 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 10.618 seconds (JVM running for 13.516)
+2022-12-05 11:35:12.185 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:38:50.675 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:38:50.706 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 3488 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:38:50.708 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:38:50.710 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:38:52.737 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:38:52.746 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:38:52.813 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:39:00.563 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:39:00.581 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:39:00.581
+2022-12-05 11:39:00.588 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 10.421 seconds (JVM running for 13.144)
+2022-12-05 11:39:02.275 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:39:47.011 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:39:47.037 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 9840 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:39:47.038 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:39:47.039 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:39:48.925 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:39:48.942 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:39:49.010 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:39:56.721 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:39:56.739 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:39:56.739
+2022-12-05 11:39:56.745 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 10.222 seconds (JVM running for 13.017)
+2022-12-05 11:39:58.493 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 11:40:22.377 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 11:40:22.406 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 6764 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 11:40:22.407 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 11:40:22.408 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 11:40:25.144 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 11:40:25.162 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 11:40:25.323 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 103 ms. Found 0 Redis repository interfaces.
+2022-12-05 11:40:34.203 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 11:40:34.224 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T11:40:34.224
+2022-12-05 11:40:34.230 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 12.381 seconds (JVM running for 15.475)
+2022-12-05 11:40:35.897 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 13:38:45.559 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 13:38:45.586 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 3736 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 13:38:45.587 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 13:38:45.589 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 13:38:47.555 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 13:38:47.563 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 13:38:47.645 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 49 ms. Found 0 Redis repository interfaces.
+2022-12-05 13:38:56.859 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 13:38:56.891 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 11.83 seconds (JVM running for 15.133)
+2022-12-05 13:38:56.882 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T13:38:56.882
+2022-12-05 13:38:58.645 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 13:39:44.593 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 13:39:44.620 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 10820 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 13:39:44.621 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 13:39:44.622 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 13:39:46.628 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 13:39:46.634 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 13:39:46.702 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
+2022-12-05 13:39:55.513 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 13:39:55.543 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T13:39:55.543
+2022-12-05 13:39:55.560 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 11.445 seconds (JVM running for 14.4)
+2022-12-05 13:39:57.311 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 13:40:24.921 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 13:40:24.949 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 10928 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 13:40:24.950 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 13:40:24.951 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 13:40:27.008 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 13:40:27.016 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 13:40:27.097 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 49 ms. Found 0 Redis repository interfaces.
+2022-12-05 13:40:34.985 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 13:40:35.002 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T13:40:35.002
+2022-12-05 13:40:35.010 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 10.599 seconds (JVM running for 13.457)
+2022-12-05 13:40:36.748 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 13:41:59.700 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 13:41:59.729 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting FirstOpencvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 10616 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 13:41:59.731 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 13:41:59.733 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 13:42:01.457 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 13:42:01.462 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 13:42:01.530 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+2022-12-05 13:42:10.184 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 13:42:10.204 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T13:42:10.204
+2022-12-05 13:42:10.210 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.common.util.FirstOpencvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started FirstOpencvTest in 11.208 seconds (JVM running for 14.02)
+2022-12-05 13:42:11.923 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:43] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 13:42:20.225 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T13:42:20.225
+2022-12-05 13:42:30.238 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T13:42:30.238
+2022-12-05 14:20:57.156 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 14:20:57.190 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting MyForestServiceTest using Java 1.8.0_31 on PC-20220628CEKX with PID 10764 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 14:20:57.191 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 14:20:57.193 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 14:20:58.977 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 14:20:58.984 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 14:20:59.057 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 51 ms. Found 0 Redis repository interfaces.
+2022-12-05 14:21:00.601 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'com.thebeastshop.forest.springboot.ForestAutoConfiguration' of type [com.thebeastshop.forest.springboot.ForestAutoConfiguration$$EnhancerBySpringCGLIB$$f086ad48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:21:00.689 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'forestConfigurationProperties' of type [com.thebeastshop.forest.springboot.properties.ForestConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:21:00.881 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean '(inner bean)#4c6a4ffd' of type [com.dtflys.forest.interceptor.SpringInterceptorFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:21:00.884 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'config0' of type [com.dtflys.forest.config.ForestConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:21:00.902 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.scanner.ClassPathClientScanner[0;39m.processBeanDefinitions [ClassPathClientScanner.java:85] - [Forest] Created Forest Client Bean with name 'myForestService' and Proxy of 'com.xsx.jsoup.service.forest.MyForestService' client interface
+2022-12-05 14:21:09.729 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 14:21:09.752 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T14:21:09.752
+2022-12-05 14:21:09.758 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started MyForestServiceTest in 13.207 seconds (JVM running for 15.981)
+2022-12-05 14:21:11.501 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:46] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 14:21:12.320 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.config.ForestConfiguration[0;39m.setBackend [ForestConfiguration.java:198] - [Forest] Http Backend: okhttp3
+2022-12-05 14:21:12.631 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.backend.okhttp3.executor.AbstractOkHttp3Executor[0;39m.logContent [AbstractOkHttp3Executor.java:128] - [Forest] Request: 
+	GET http://ditu.amap.com/service/regeo?longitude=121.475078&latitude=31.223577 HTTP
+2022-12-05 14:21:13.162 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.backend.okhttp3.executor.AbstractOkHttp3Executor[0;39m.logContent [AbstractOkHttp3Executor.java:128] - [Forest] Response: Status = 200, Time = 530ms
+2022-12-05 14:25:47.026 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 14:25:47.055 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting MyForestServiceTest using Java 1.8.0_31 on PC-20220628CEKX with PID 10572 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 14:25:47.057 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 14:25:47.059 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 14:25:48.867 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 14:25:48.877 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 14:25:48.942 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+2022-12-05 14:25:50.241 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'com.thebeastshop.forest.springboot.ForestAutoConfiguration' of type [com.thebeastshop.forest.springboot.ForestAutoConfiguration$$EnhancerBySpringCGLIB$$f086ad48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:25:50.289 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'forestConfigurationProperties' of type [com.thebeastshop.forest.springboot.properties.ForestConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:25:50.424 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean '(inner bean)#4c6a4ffd' of type [com.dtflys.forest.interceptor.SpringInterceptorFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:25:50.428 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'config0' of type [com.dtflys.forest.config.ForestConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:25:50.447 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.scanner.ClassPathClientScanner[0;39m.processBeanDefinitions [ClassPathClientScanner.java:85] - [Forest] Created Forest Client Bean with name 'myForestService' and Proxy of 'com.xsx.jsoup.service.forest.MyForestService' client interface
+2022-12-05 14:25:57.586 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 14:25:57.608 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T14:25:57.607
+2022-12-05 14:25:57.613 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started MyForestServiceTest in 11.2 seconds (JVM running for 14.217)
+2022-12-05 14:25:59.466 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:46] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 14:26:00.084 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.config.ForestConfiguration[0;39m.setBackend [ForestConfiguration.java:198] - [Forest] Http Backend: okhttp3
+2022-12-05 14:26:00.197 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.backend.okhttp3.executor.AbstractOkHttp3Executor[0;39m.logContent [AbstractOkHttp3Executor.java:128] - [Forest] Request: 
+	GET http://ditu.amap.com/service/regeo?longitude=77.11835&latitude=28.64903 HTTP
+2022-12-05 14:26:00.534 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.backend.okhttp3.executor.AbstractOkHttp3Executor[0;39m.logContent [AbstractOkHttp3Executor.java:128] - [Forest] Response: Status = 200, Time = 337ms
+2022-12-05 14:26:31.084 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 14:26:31.114 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting MyForestServiceTest using Java 1.8.0_31 on PC-20220628CEKX with PID 10448 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 14:26:31.114 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 14:26:31.116 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 14:26:32.828 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 14:26:32.833 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 14:26:32.904 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
+2022-12-05 14:26:34.200 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'com.thebeastshop.forest.springboot.ForestAutoConfiguration' of type [com.thebeastshop.forest.springboot.ForestAutoConfiguration$$EnhancerBySpringCGLIB$$a5ffe561] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:26:34.242 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'forestConfigurationProperties' of type [com.thebeastshop.forest.springboot.properties.ForestConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:26:34.377 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean '(inner bean)#6042d663' of type [com.dtflys.forest.interceptor.SpringInterceptorFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:26:34.383 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'config0' of type [com.dtflys.forest.config.ForestConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:26:34.400 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.scanner.ClassPathClientScanner[0;39m.processBeanDefinitions [ClassPathClientScanner.java:85] - [Forest] Created Forest Client Bean with name 'myForestService' and Proxy of 'com.xsx.jsoup.service.forest.MyForestService' client interface
+2022-12-05 14:26:41.546 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 14:26:41.569 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T14:26:41.569
+2022-12-05 14:26:41.576 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started MyForestServiceTest in 10.985 seconds (JVM running for 14.112)
+2022-12-05 14:26:43.252 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:46] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 14:26:43.851 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.config.ForestConfiguration[0;39m.setBackend [ForestConfiguration.java:198] - [Forest] Http Backend: okhttp3
+2022-12-05 14:26:43.934 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.backend.okhttp3.executor.AbstractOkHttp3Executor[0;39m.logContent [AbstractOkHttp3Executor.java:128] - [Forest] Request: 
+	GET http://ditu.amap.com/service/regeo?longitude=28.64903&latitude=77.11835 HTTP
+2022-12-05 14:26:44.278 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.backend.okhttp3.executor.AbstractOkHttp3Executor[0;39m.logContent [AbstractOkHttp3Executor.java:128] - [Forest] Response: Status = 200, Time = 343ms
+2022-12-05 14:27:37.450 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 14:27:37.483 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting MyForestServiceTest using Java 1.8.0_31 on PC-20220628CEKX with PID 10832 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 14:27:37.484 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 14:27:37.486 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 14:27:39.300 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 14:27:39.308 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 14:27:39.387 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
+2022-12-05 14:27:40.698 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'com.thebeastshop.forest.springboot.ForestAutoConfiguration' of type [com.thebeastshop.forest.springboot.ForestAutoConfiguration$$EnhancerBySpringCGLIB$$2af47580] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:27:40.744 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'forestConfigurationProperties' of type [com.thebeastshop.forest.springboot.properties.ForestConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:27:40.858 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean '(inner bean)#49f3ff41' of type [com.dtflys.forest.interceptor.SpringInterceptorFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:27:40.862 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'config0' of type [com.dtflys.forest.config.ForestConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 14:27:40.887 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.scanner.ClassPathClientScanner[0;39m.processBeanDefinitions [ClassPathClientScanner.java:85] - [Forest] Created Forest Client Bean with name 'myForestService' and Proxy of 'com.xsx.jsoup.service.forest.MyForestService' client interface
+2022-12-05 14:27:47.467 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 14:27:47.486 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T14:27:47.486
+2022-12-05 14:27:47.491 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.forest.MyForestServiceTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started MyForestServiceTest in 10.51 seconds (JVM running for 13.663)
+2022-12-05 14:27:49.177 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:46] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 14:27:49.673 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.config.ForestConfiguration[0;39m.setBackend [ForestConfiguration.java:198] - [Forest] Http Backend: okhttp3
+2022-12-05 14:27:49.766 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.backend.okhttp3.executor.AbstractOkHttp3Executor[0;39m.logContent [AbstractOkHttp3Executor.java:128] - [Forest] Request: 
+	GET http://ditu.amap.com/service/regeo?longitude=116.41339&latitude=39.91092 HTTP
+2022-12-05 14:27:50.106 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.backend.okhttp3.executor.AbstractOkHttp3Executor[0;39m.logContent [AbstractOkHttp3Executor.java:128] - [Forest] Response: Status = 200, Time = 340ms
+2022-12-05 16:36:18.789 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 16:36:18.830 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting OpenCvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 10448 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 16:36:18.831 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 16:36:18.832 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 16:36:21.003 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 16:36:21.010 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 16:36:21.096 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 54 ms. Found 0 Redis repository interfaces.
+2022-12-05 16:36:22.453 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'com.thebeastshop.forest.springboot.ForestAutoConfiguration' of type [com.thebeastshop.forest.springboot.ForestAutoConfiguration$$EnhancerBySpringCGLIB$$229c3e98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:36:22.501 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'forestConfigurationProperties' of type [com.thebeastshop.forest.springboot.properties.ForestConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:36:22.650 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean '(inner bean)#2287395' of type [com.dtflys.forest.interceptor.SpringInterceptorFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:36:22.653 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'config0' of type [com.dtflys.forest.config.ForestConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:36:22.674 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.scanner.ClassPathClientScanner[0;39m.processBeanDefinitions [ClassPathClientScanner.java:85] - [Forest] Created Forest Client Bean with name 'myForestService' and Proxy of 'com.xsx.jsoup.service.forest.MyForestService' client interface
+2022-12-05 16:36:30.404 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 16:36:30.432 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started OpenCvTest in 12.161 seconds (JVM running for 15.763)
+2022-12-05 16:36:30.474 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T16:36:30.474
+2022-12-05 16:36:32.228 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:46] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 16:37:06.604 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 16:37:06.677 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting OpenCvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 2592 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 16:37:06.679 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 16:37:06.680 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 16:37:08.815 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 16:37:08.841 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 16:37:08.936 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 57 ms. Found 0 Redis repository interfaces.
+2022-12-05 16:37:10.237 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'com.thebeastshop.forest.springboot.ForestAutoConfiguration' of type [com.thebeastshop.forest.springboot.ForestAutoConfiguration$$EnhancerBySpringCGLIB$$b889f2b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:37:10.305 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'forestConfigurationProperties' of type [com.thebeastshop.forest.springboot.properties.ForestConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:37:10.436 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean '(inner bean)#536b71b4' of type [com.dtflys.forest.interceptor.SpringInterceptorFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:37:10.443 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'config0' of type [com.dtflys.forest.config.ForestConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:37:10.464 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.scanner.ClassPathClientScanner[0;39m.processBeanDefinitions [ClassPathClientScanner.java:85] - [Forest] Created Forest Client Bean with name 'myForestService' and Proxy of 'com.xsx.jsoup.service.forest.MyForestService' client interface
+2022-12-05 16:37:17.968 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 16:37:17.986 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T16:37:17.986
+2022-12-05 16:37:17.993 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started OpenCvTest in 11.96 seconds (JVM running for 15.158)
+2022-12-05 16:37:19.676 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:46] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 16:37:27.999 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T16:37:27.999
+2022-12-05 16:37:38.003 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T16:37:38.003
+2022-12-05 16:39:30.485 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 16:39:30.524 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting OpenCvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 10784 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 16:39:30.526 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 16:39:30.527 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 16:39:32.332 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 16:39:32.341 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 16:39:32.408 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+2022-12-05 16:39:33.657 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'com.thebeastshop.forest.springboot.ForestAutoConfiguration' of type [com.thebeastshop.forest.springboot.ForestAutoConfiguration$$EnhancerBySpringCGLIB$$b889f2b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:39:33.702 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'forestConfigurationProperties' of type [com.thebeastshop.forest.springboot.properties.ForestConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:39:33.827 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean '(inner bean)#536b71b4' of type [com.dtflys.forest.interceptor.SpringInterceptorFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:39:33.830 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'config0' of type [com.dtflys.forest.config.ForestConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:39:33.852 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.scanner.ClassPathClientScanner[0;39m.processBeanDefinitions [ClassPathClientScanner.java:85] - [Forest] Created Forest Client Bean with name 'myForestService' and Proxy of 'com.xsx.jsoup.service.forest.MyForestService' client interface
+2022-12-05 16:39:41.418 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 16:39:41.438 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T16:39:41.438
+2022-12-05 16:39:41.443 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started OpenCvTest in 11.587 seconds (JVM running for 14.794)
+2022-12-05 16:39:43.122 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:46] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 16:39:51.452 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T16:39:51.452
+2022-12-05 16:40:53.089 default [main] [31mWARN [0;39m [36morg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer[0;39m.logDuplicateJsonObjectsWarning [DuplicateJsonObjectContextCustomizerFactory.java:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-12-05 16:40:53.127 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarting [StartupInfoLogger.java:55] - Starting OpenCvTest using Java 1.8.0_31 on PC-20220628CEKX with PID 6804 (started by Administrator in D:\xsx-workspace\jsoup)
+2022-12-05 16:40:53.128 default [main] [39mDEBUG[0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarting [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-12-05 16:40:53.130 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStartupProfileInfo [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2022-12-05 16:40:55.164 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.multipleStoresDetected [RepositoryConfigurationDelegate.java:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-05 16:40:55.172 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-12-05 16:40:55.243 default [main] [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m.registerRepositoriesIn [RepositoryConfigurationDelegate.java:201] - Finished Spring Data repository scanning in 52 ms. Found 0 Redis repository interfaces.
+2022-12-05 16:40:56.449 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'com.thebeastshop.forest.springboot.ForestAutoConfiguration' of type [com.thebeastshop.forest.springboot.ForestAutoConfiguration$$EnhancerBySpringCGLIB$$55208d8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:40:56.504 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'forestConfigurationProperties' of type [com.thebeastshop.forest.springboot.properties.ForestConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:40:56.641 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean '(inner bean)#39941489' of type [com.dtflys.forest.interceptor.SpringInterceptorFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:40:56.645 default [main] [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m.postProcessAfterInitialization [PostProcessorRegistrationDelegate.java:376] - Bean 'config0' of type [com.dtflys.forest.config.ForestConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-05 16:40:56.665 default [main] [34mINFO [0;39m [36mcom.dtflys.forest.scanner.ClassPathClientScanner[0;39m.processBeanDefinitions [ClassPathClientScanner.java:85] - [Forest] Created Forest Client Bean with name 'myForestService' and Proxy of 'com.xsx.jsoup.service.forest.MyForestService' client interface
+2022-12-05 16:41:03.378 default [main] [34mINFO [0;39m [36morg.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[0;39m.finishRegistration [ScheduledAnnotationBeanPostProcessor.java:315] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-12-05 16:41:03.415 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T16:41:03.415
+2022-12-05 16:41:03.422 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.service.OpenCvTest[0;39m.logStarted [StartupInfoLogger.java:61] - Started OpenCvTest in 10.851 seconds (JVM running for 13.885)
+2022-12-05 16:41:05.160 default [main] [34mINFO [0;39m [36mcom.xsx.jsoup.JsoupApplication[0;39m.run [JsoupApplication.java:46] - jsoup Started! [PC-20220628CEKX<192.168.56.1>].
+2022-12-05 16:41:13.425 default [pool-3-thread-1] [34mINFO [0;39m [36mcom.xsx.jsoup.job.ScheduleTask[0;39m.lambda$configureTasks$0 [ScheduleTask.java:62] - 动态定时任务=====================Current time： 2022-12-05T16:41:13.425

@@ -24,7 +24,7 @@ import java.util.Set;
 @Slf4j
 public class WebDriverService {
 
-    public void useWebDriver() throws Exception{
+    public void useWebDriver() throws Exception {
         ChromeDriver driver = getChromeDriver("https://www.xiaohongshu.com/");
         log.info("单击事件");
         this.clickDemo(driver);
@@ -55,20 +55,20 @@ public class WebDriverService {
         driver.executeScript("arguments[0].click()", aboutUs);
 
         Set<Cookie> cookies = driver.manage().getCookies();
-        cookies.forEach(x-> System.out.println(x));
+        cookies.forEach(x -> System.out.println(x));
 
     }
 
 
-    public void getHeaders() throws Exception{
+    public void getHeaders() throws Exception {
         //1.使用webDriver打开小红书
         String url = "https://www.xiaohongshu.com/";
         ChromeDriver driver = getChromeDriver(url);
 
         log.info("Cookie===============================");
         Set<Cookie> cookies = driver.manage().getCookies();
-        cookies.forEach(x-> System.out.println(x));
-        
+        cookies.forEach(x -> System.out.println(x));
+
         //2.使用jsoup解析页面，获取链接
         String pageSource = driver.getPageSource();
         Document document = Jsoup.parse(pageSource);
